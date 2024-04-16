@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../Downloads/Crear-un-Formulario-de-Registro-con-HTML-y-CSS--master (2)"
+		},
+		{
+			"path": "../milestone-profile2"
+		},
+		{
+			"path": "../../Downloads/HTMLPortfolioProject-master"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "javascrip"
+	}
+}
