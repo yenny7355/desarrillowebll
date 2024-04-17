@@ -49,15 +49,14 @@ carrito.forEach(item => {
 */
 
 //adicionar un nuevo registro
-let item = {nombre:"leche",cantidad:1,precio:7.5};
+//let item = {nombre:"leche",cantidad:1,precio:7.5};
 //imprimir item,cantidad,precio,total
 
 let carrito = [{nombre:"leche",cantidad:1,precio:3},
                {nombre:"carne",cantidad:2,precio:5},
                {nombre:"fideo",cantidad:1,precio:8},
                {nombre:"papa",cantidad:3,precio:10}];
-
-console.log("contenido del carrito:");
+/*console.log("contenido del carrito:");
 carrito.forEach(item =>{
     console.log("item:"+item.nombre);
     console.log("cantidad:"+item.cantidad);
@@ -80,3 +79,28 @@ carrito.forEach(item =>{
     console.log("total:bs."+total.toFixed(2));
     console.log;
 })
+
+
+//Buscar funciones o procesos para ordenar un ARRAY.
+
+/*
+let numeros = [3,5,8,10]
+numeros.sort((a,b)=>a-b);
+console.log(numeros);
+console.log("IMPRECION ORDENADO POR PRECIO");
+carrito.sort((a,b)=>a.precio - b.precio); //ordena alfabeticamente
+console.log(carrito);
+console.log("IMPRECION ORDENADO POR NOMBRE");
+carrito.sort((a,b)=>a.nombre.localeCompare(b.nombre));
+console.log(carrito);
+*/
+
+console.log("IMPRECION ORDENADO POR PRECIO");
+let carritoPrecio = carrito.slice().sort((a,b)=>a.precio - b.precio); //ordena alfabeticamente
+console.log(carritoPrecio);
+
+console.log("IMPRECION ORDENADO POR NOMBRE");
+let carritoNombre = carrito.slice().sort((a,b)=>a.nombre.localeCompare(b.nombre)); //ordena alfabeticamente
+console.log(carritoNombre);
+
+
