@@ -1,0 +1,10 @@
+div.content {
+    border: 1px solid black;
+    opacity: 0.25;
+  }
+  
+  div.content.highlight,
+  div.content:nth-child(2) {
+    border: 1px solid red;
+    opacity: 1;
+  }
