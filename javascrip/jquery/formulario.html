@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Estudiantes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Registro de Estudiantes</h1>
+
+    <form id="registroForm">
+        <div class="form-group">
+            <label for="ci">CI:</label>
+            <input type="text" class="form-control" id="ci" name="ci" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" class="form-control" id="fecha" name="fecha" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <input type="text" class="form-control" id="direccion" name="direccion" required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+
+    <div id="listado" class="mt-5">
+        <h2 class="mb-3">Listado de Estudiantes</h2>
+        <button id="listarBtn" class="btn btn-success mb-3">Listar Estudiantes</button>
+        <table class="table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>CI</th>
+                    <th>Nombre</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody id="listaEstudiantes"></tbody>
+        </table>
+    </div>
+
+    <button id="imprimirBtn" class="btn btn-secondary mt-4">Imprimir Listado</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="formulario.js"></script>
+</body>
+</html>
